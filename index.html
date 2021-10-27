@@ -98,20 +98,26 @@
       <img class="center-image" src="images/logo.png" width="400" />
 
       <div class="modal-body p-5 pt-5">
-        <form class="">
+        <form class="" id="form">
           <div class="form-floating mb-3">
-            <input type="email" class="form-control rounded-pill px-4" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput" class="ms-s">Email</label>
+            <input type="text" name="name" class="form-control rounded-pill px-4" id="floatingInput" placeholder="Ім'я">
+            <label for="floatingInput" class="ms-s">Ім'я</label>
           </div>
           <div class="form-floating mb-3">
-            <input type="phone" class="form-control rounded-pill px-4" id="floatingInput2" placeholder="name@example.com">
+            <input type="date" name="birthdate" class="form-control rounded-pill px-4" id="floatingInput3" placeholder="День народження">
+            <label for="floatingInput3" class="ms-s">День народження</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="phone" name="phone" class="form-control rounded-pill px-4" id="floatingInput2" placeholder="Телефон">
             <label for="floatingInput2" class="ms-s">Телефон</label>
           </div>
-          <button class="w-100 mb-2 btn btn-lg rounded-pill btn-primary" type="submit">Зареєструватись</button>
+          <button id="submit" class="w-100 mb-2 btn btn-lg rounded-pill btn-primary" type="submit">Зареєструватись</button>
         </form>
       </div>
     </div>
 
   </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
